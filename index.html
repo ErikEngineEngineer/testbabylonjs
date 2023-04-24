@@ -18,6 +18,9 @@
         return scene;
     }
     const sceneToRender = createScene();
+    engine.runRenderLoop(function(){
+        sceneToRender.render();
+    });
     </script>
 </body>
 </html>
